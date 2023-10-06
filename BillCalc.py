@@ -2,8 +2,8 @@
 def BillCalc(Totalbill, TipPercent, Headcount):
     Tip=Totalbill*(TipPercent / 100)
     TotalAmt=Totalbill + Tip
-    amount_per_person = TotalAmt / Headcount
-    return round(amount_per_person, 2)
+    AmountPerPerson = TotalAmt / Headcount
+    return round(AmountPerPerson, 2)
 #Headcount=no. of people
 Totalbill = float(input("Hello, kindly Enter the total bill amount: "))
 tip_option = input("Choose your tip percentage (10%, 12%, or 15%): ")
@@ -19,5 +19,5 @@ else:
     print("Invalid tip percentage. Please choose 10, 12, or 15.")
     exit()
 
-amount_per_person = BillCalc(Totalbill, TipPercent, Headcount)
-print("Each person should pay:",amount_per_person)
+AmountPerPerson = BillCalc(Totalbill, TipPercent, Headcount)
+print("Each person should pay:",AmountPerPerson)
